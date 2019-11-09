@@ -30,7 +30,7 @@ curl -v -H "Host: example.com" localhost
 2019/11/09 14:39:44 [error] 30188#30188: *9 "/var/www/example.com/html/index.html" is forbidden (13: Permission denied), client: 127.0.0.1, server: example.com, request: "GET / HTTP/1.1", host: "example.com"
 ```
 
-#### Root Cause:
+#### Probable Root Cause:
 > SELinux: When SELinux is enabled, any path other than the default nginx ie `/usr/share/nginx/html/` will not have permission to serve the content. 
 
 
